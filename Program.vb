@@ -1,12 +1,11 @@
 Imports System
 Imports System.Windows.Forms
 
-Namespace CalculatorApp
-    Friend Module Program
-        <STAThread>
-        Friend Sub Main()
-            ApplicationConfiguration.Initialize()
-            Application.Run(New MainForm())
-        End Sub
-    End Module
-End Namespace
+Module Program
+    <STAThread>
+    Sub Main()
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.Run(New CalculatorForm())
+    End Sub
+End Module
